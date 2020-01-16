@@ -1,24 +1,26 @@
-# Timelapse
-Simple time lapse video with fswebcam, python and ffmpeg
+# Timelapse Video
+- Simple time lapse video using fswebcam, python and ffmpeg
 
-This script creates a video with pics taken from webcam device
-
-
-
-timelapse.py --frames [frames] --interval [interval in seconds] --device [device] --sharpness [0 to 11]
+- This script creates a video with pics taken from webcam device
 
 
-ex:
+## Requirements
+- python
+- fswebcam
+- ffmpeg
 
-timelapse.py --frames 60 --interval 5 --device /dev/video0 --sharpness 8
+Tested on **Raspbian** under **Raspberry PI 3 B +**
+
+## Usage
+>timelapse.py --frames [frames] --interval [interval in seconds] --device [device] --sharpness [0 to 11]
 
 
-Defaults
+**Example**
 
-frames: 60
+    timelapse.py --frames 60 --interval 5 --device /dev/video0 --sharpness 8
 
+**Defaults**
+>frames: 60
 interval: 5
-
 device: /dev/video0
-
 sharpness: 8
