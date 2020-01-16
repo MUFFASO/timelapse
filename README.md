@@ -9,7 +9,7 @@
 - fswebcam
 - ffmpeg
 
-Tested on **Raspbian** under **Raspberry PI 3 B +**
+Tested on **Raspbian** under **Raspberry PI 3B+** with generic usb webcam
 
 ## Usage
 >timelapse.py --frames [frames] --interval [interval in seconds] --device [device] --sharpness [0 to 11]
@@ -20,7 +20,7 @@ Tested on **Raspbian** under **Raspberry PI 3 B +**
     timelapse.py --frames 60 --interval 5 --device /dev/video0 --sharpness 8
 
 **Defaults**
->frames: 60
-interval: 5
-device: /dev/video0
-sharpness: 8
+- frames: 60
+- interval: 5
+- device: /dev/video0
+- sharpness: 8
