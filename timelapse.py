@@ -14,7 +14,7 @@ while frames > 0:
     frames = frames-1
     time.sleep(interval)
 print('\x1b[6;30;42m' + "\e[1m\e[7m---> Convirtiendo..." + '\x1b[0m')
-os.system("ffmpeg -r 15 -pattern_type glob -i './tmp-timelapse/*.jpg' -s 640:480 -c:v h264 -strftime 1 './timelapse-%Y-%m-%d_%H-%M.mp4'")
+os.system("ffmpeg -r 15 -pattern_type glob -i './tmp-timelapse/*.jpg' -s 640:480 -c:v h264 -strftime 1 './timelapse.mp4'")
 print('\x1b[6;30;42m' + '---> Eliminando imgs...' + '\x1b[0m')
 os.system("rm -r ./tmp-timelapse/")
 print('\x1b[6;30;42m' + '---> Fin' + '\x1b[0m')
